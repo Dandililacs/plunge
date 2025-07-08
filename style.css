@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'More-Sugar';
+    src: url('../fonts/more-sugar.regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lazy Dog';
+    src: url('../fonts/lazy_dog.ttf') format('truetype');
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    height: 100%;
+    font-family: 'Fredoka One', sans-serif;
+    background: linear-gradient(135deg, #f6ebbd, #aecbd6);
+    background-size: cover;
+    color: #4f2f2f;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+br {
+    content: " ";
+    display: block;
+    margin-bottom: initial;
+}
+
+.cookie-border-left,
+.cookie-border-right {
+    position: fixed;
+    top: 0;
+    width: 130px;
+    height: 100%;
+    background: url('../images/cookie-stack.png') repeat-y center/contain;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.cookie-border-left {
+    left: 0;
+}
+
+.cookie-border-right {
+    right: 0;
+}
+
+.logo {
+    display: inline-block;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.content-container {
+    width: calc(100% - 300px);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+.notification-section {
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    border: 1px solid #cfb886;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notify-form input[type="email"] {
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+    font-size: 1em;
+    border: 2px solid #cfb886;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 15px;
+}
+.notify-form .share-button {
+    background: #57422f;
+    color: #ffffff;
+    font-family: 'Lazy Dog', sans-serif;
+    font-size: 1.2em;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notify-form .share-button:hover {
+    background: #57422f;;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.feedback-message {
+    margin-top: 1em;
+    font-size: 1em;
+    font-family: 'Playpen Sans';
+    color: #4f2f2f;
+    display: none;
+}
+
+.feedback-message.success {
+    color: green;
+}
+
+.feedback-message.error {
+    color: red;
+}
