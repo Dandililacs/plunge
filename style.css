@@ -23,7 +23,7 @@ body {
     min-height: 100vh;
     height: 100%;
     font-family: 'Fredoka One', sans-serif;
-    background: linear-gradient(135deg, #f6ebbd, #aecbd6);
+    background: linear-gradient(135deg, #b0ecf6, #f1d0a8);
     background-size: cover;
     color: #4f2f2f;
     overflow-x: hidden;
@@ -255,4 +255,12 @@ br {
 
 .feedback-message.error {
     color: red;
+}
+.Social {
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    width: 80%;
+    margin: 0 auto;
+
 }
